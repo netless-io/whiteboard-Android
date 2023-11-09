@@ -14,7 +14,6 @@ package com.herewhite.sdk;
  * @note 该接口基于 Agora RTC SDK 的混音方法设计，如果你使用的实时音视频 SDK 不是 Agora RTC SDK，但也具有混音接口和混音状态回调，你也可以调用 `AudioMixerBridge` 接口。
  */
 public interface AudioMixerBridge {
-
     /**
      * 开始播放音乐文件及混音。
      * <p>

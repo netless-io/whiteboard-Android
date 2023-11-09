@@ -15,37 +15,104 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/exitRtc"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Exit"
-                android:textAllCaps="false" />
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/startVideo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="startVideo"
-                android:textAllCaps="false" />
+                <Button
+                    android:id="@+id/exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exit"
+                    android:textAllCaps="false" />
 
-            <Button
-                android:id="@+id/pauseVideo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="pauseVideo"
-                android:textAllCaps="false" />
-        </LinearLayout>
+                <Button
+                    android:id="@+id/playEffect1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playEffect1"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/playEffect2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playEffect2"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/playEffect3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="playEffect3"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/getEffectCurrentPosition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="getEffectPosition"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/pauseEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pauseEffect"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/resumeEffect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="resumeEffect"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/stopAllEffects"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="stopAllEffects"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/startAudioMixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="startMixing"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/stopAudioMixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="stopMixing"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/pauseAudioMixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pauseMixing"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/resumeAudioMixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="resumeMixing"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </ScrollView>
     </FrameLayout>
 
     <LinearLayout
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:orientation="vertical"
@@ -64,9 +131,8 @@
             android:layout_height="@dimen/call_button_size"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:onClick="onCallClicked"
             android:scaleType="centerCrop"
-            android:src="@drawable/btn_startcall" />
+            android:src="@drawable/ic_call" />
 
         <FrameLayout
             android:id="@+id/local_video_view_container"

@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">rtc</string>
     <!-- rtc appid ，获取方式参考 rtc 文档 -->
-    <string name="rtc_app_id">1405009c435b4408bfb68979ee8bba77</string>
+    <string name="rtc_app_id">1e91eb01d5c147baafcbac407f9cb5d2</string>
 </resources>
